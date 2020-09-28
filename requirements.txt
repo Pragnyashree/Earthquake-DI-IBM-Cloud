@@ -1,0 +1,3 @@
+Flask>=1.0.0
+ibm_db
+ibm_db_sa

@@ -1,0 +1,112 @@
+   <body>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.w3-white, .w3-hover-white:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.w3-padding-medium, .w3-padding, .w3-form {
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+.w3-example {
+    background-color: #f1f1f1;
+    padding-top: 0.01em;
+    padding-right: 16px;
+    padding-bottom: 0.01em;
+    padding-left: 16px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+        rgba(0, 0, 0, 0.12);
+    box-sizing: inherit;
+}
+
+</style>
+<title>Home</title>
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ADBProject</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="w3-example">
+        <hr style="border: 1px solid black;" />
+        <form action="/lareq" method="POST">
+    <h4>Display 'n' largest earthquakes</h4>
+  <label for="num">Enter n:</label>
+  <input type="number" id="num" name="num"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/daterange" method="POST">
+    <h4>How many quakes with Ricter scale greater than 3 </h4>
+  <label for="date1">From Date:</label>
+  <input type="date" id="date1" name="date1"><br><br>
+  <label for="date2">To Date:</label>
+  <input type="date" id="date2" name="date2"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/ricrange" method="POST">
+    <h4> How many quakes in past n days with Ricter scale in the range </h4>
+  <label for="num1">Number of days:</label>
+  <input type="number" id="num1" name="num1"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/dist" method="POST">
+    <h4> Quakes occured within x kms of Arlington,Texas</h4>
+  <label for="dist">Distance in km</label>
+  <input type="number" id="dist" name="dist"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/distComp" method="POST">
+    <h4> Are quakes more common within x km of Anchorage (61 N, 150 W) than Dallas (32.8 N, 96.8 W)? </h4>
+  <label for="dist">Distance in km</label>
+  <input type="number" id="dist" name="dist"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/largesteq" method="POST">
+    <h4>Where did largest quake occur within x km of Dallas?  </h4>
+  <label for="dist">Distance in km</label>
+  <input type="number" id="dist" name="dist"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  <hr style="border: 1px solid black;" />
+        <form action="/lareqweek" method="POST">
+    <h4>Where did largest quake occur in last week within x km of Arlington?  </h4>
+  <label for="dist">Distance in km</label>
+  <input type="number" id="dist" name="dist"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+   <hr style="border: 1px solid black;" />
+        <form action="/cloeqmag" method="POST">
+    <h4>Where is closest quake with mag > num? When?  </h4>
+  <label for="num">Enter magnitude:</label>
+  <input type="number" id="num" name="num"><br><br>
+  <input type = "submit" value = "Submit" />
+  </form>
+  </div>
+</body>
